@@ -18,14 +18,14 @@ class ApiManager {
         Alamofire.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers).responseJSON { response in
             switch(response.result) {
             case .success(_):
-//                if let data = response.result.value{
-//                    print(response.result.value)
-//                }
-//                break
+                if let data = response.result.value{
+                    print(response.result.value)
+                }
+                break
                 
             case .failure(_):
-//                print(response.result.error)
-//                break
+                print(response.result.error)
+                break
                 
             }
         }
