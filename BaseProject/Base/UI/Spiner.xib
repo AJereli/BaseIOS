@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Spiner" customModule="BaseProject" customModuleProvider="target">
+            <connections>
+                <outlet property="_spiner" destination="gKr-Of-XeI" id="m6z-Y1-wWA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ntA-cg-mgA">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-Of-XeI">
+                    <rect key="frame" x="12" y="12" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.124444797" green="0.1237414416" blue="0.1166004828" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xPr-zs-a7K" firstAttribute="bottom" secondItem="gKr-Of-XeI" secondAttribute="bottom" constant="11" id="3jD-0W-utL"/>
+                <constraint firstItem="gKr-Of-XeI" firstAttribute="leading" secondItem="xPr-zs-a7K" secondAttribute="leading" constant="12" id="4GJ-3C-awE"/>
+                <constraint firstItem="xPr-zs-a7K" firstAttribute="trailing" secondItem="gKr-Of-XeI" secondAttribute="trailing" constant="11" id="Rm8-Rn-sVO"/>
+                <constraint firstItem="gKr-Of-XeI" firstAttribute="top" secondItem="xPr-zs-a7K" secondAttribute="top" constant="12" id="w7s-1o-34L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xPr-zs-a7K"/>
+            <point key="canvasLocation" x="-153" y="-31"/>
+        </view>
+    </objects>
+</document>

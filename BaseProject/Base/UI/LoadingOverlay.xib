@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingOverlay" customModule="BaseProject" customModuleProvider="target">
+            <connections>
+                <outlet property="uiSpinnerContainer" destination="8T6-2N-cba" id="kwd-l5-Gck"/>
+                <outlet property="view" destination="iN0-l3-epB" id="BG8-dD-Pk2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-2N-cba">
+                    <rect key="frame" x="155" y="311" width="65" height="65"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="lnr-eU-DzU">
+                            <rect key="frame" x="22" y="22" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.4234575320621432" green="0.4234575320621432" blue="0.4234575320621432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="lnr-eU-DzU" firstAttribute="leading" secondItem="8T6-2N-cba" secondAttribute="leading" constant="22" id="81r-FZ-jgc"/>
+                        <constraint firstAttribute="height" constant="65" id="9MN-dU-pt8"/>
+                        <constraint firstAttribute="trailing" secondItem="lnr-eU-DzU" secondAttribute="trailing" constant="23" id="EUf-GF-vvF"/>
+                        <constraint firstAttribute="width" constant="65" id="Tbk-iE-2eD"/>
+                        <constraint firstAttribute="bottom" secondItem="lnr-eU-DzU" secondAttribute="bottom" constant="23" id="fms-Yy-WiV"/>
+                        <constraint firstItem="lnr-eU-DzU" firstAttribute="top" secondItem="8T6-2N-cba" secondAttribute="top" constant="22" id="olB-tw-Dpz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.81715973981878176" green="0.81715973981878176" blue="0.81715973981878176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="8T6-2N-cba" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="cJ7-dq-CTJ"/>
+                <constraint firstItem="8T6-2N-cba" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="oRb-5g-n42"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
