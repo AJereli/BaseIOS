@@ -14,21 +14,7 @@ class Spiner : BaseXib {
 
     @IBOutlet var _spiner: UIActivityIndicatorView!
     
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-       // self.loadFromXib()
-        
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-       // self.loadFromXib()
-        
-    }
-    
+
     func start (){
         _spiner.startAnimating()
     }

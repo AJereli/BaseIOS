@@ -29,6 +29,9 @@
 		CE3697A020082DD5008EC5CA /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36979F20082DD5008EC5CA /* LoadingOverlay.swift */; };
 		CE3697A220082E41008EC5CA /* BaseOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3697A120082E41008EC5CA /* BaseOverlay.swift */; };
 		CE3697A520084B87008EC5CA /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3697A420084B87008EC5CA /* ApiManager.swift */; };
+		CE38EE6B200D582A00FE142A /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38EE6A200D582A00FE142A /* BLEManager.swift */; };
+		CE38EE6D200D690700FE142A /* BLEDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38EE6C200D690700FE142A /* BLEDeviceCell.swift */; };
+		CE38EE6F200D7DBF00FE142A /* BLEDeviceInfoVCntrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38EE6E200D7DBF00FE142A /* BLEDeviceInfoVCntrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		CE36979F20082DD5008EC5CA /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		CE3697A120082E41008EC5CA /* BaseOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOverlay.swift; sourceTree = "<group>"; };
 		CE3697A420084B87008EC5CA /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		CE38EE6A200D582A00FE142A /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		CE38EE6C200D690700FE142A /* BLEDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceCell.swift; sourceTree = "<group>"; };
+		CE38EE6E200D7DBF00FE142A /* BLEDeviceInfoVCntrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceInfoVCntrl.swift; sourceTree = "<group>"; };
 		F085E1ACD7E2158FD831A5EC /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F355AF93D12AE0B963888BC4 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +161,9 @@
 				CE095EFD1FEB16AC00137082 /* AppDelegate.swift */,
 				CE095EFF1FEB16AC00137082 /* ViewController.swift */,
 				CE3697992008150E008EC5CA /* TestVCntrl.swift */,
+				CE38EE6C200D690700FE142A /* BLEDeviceCell.swift */,
+				CE38EE6E200D7DBF00FE142A /* BLEDeviceInfoVCntrl.swift */,
+				CE38EE6A200D582A00FE142A /* BLEManager.swift */,
 				CE095F511FEC981300137082 /* FBApi.swift */,
 				CE095F011FEB16AC00137082 /* Main.storyboard */,
 				CE095F041FEB16AC00137082 /* Assets.xcassets */,
@@ -298,6 +307,9 @@
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -392,6 +404,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BlueCapKit/BlueCapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -405,6 +418,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlueCapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -447,11 +461,14 @@
 				CE095F441FEB219D00137082 /* TestView.swift in Sources */,
 				CE095F401FEB17A100137082 /* BaseXib.swift in Sources */,
 				CE3697A020082DD5008EC5CA /* LoadingOverlay.swift in Sources */,
+				CE38EE6D200D690700FE142A /* BLEDeviceCell.swift in Sources */,
 				CE3697982006D8AE008EC5CA /* Spiner.swift in Sources */,
 				CE095F3E1FEB175D00137082 /* Utils.swift in Sources */,
 				CE095F381FEB173D00137082 /* NibLoader.swift in Sources */,
 				CE3697A520084B87008EC5CA /* ApiManager.swift in Sources */,
+				CE38EE6B200D582A00FE142A /* BLEManager.swift in Sources */,
 				CE095F001FEB16AC00137082 /* ViewController.swift in Sources */,
+				CE38EE6F200D7DBF00FE142A /* BLEDeviceInfoVCntrl.swift in Sources */,
 				CE095EFE1FEB16AC00137082 /* AppDelegate.swift in Sources */,
 				CE36979A2008150E008EC5CA /* TestVCntrl.swift in Sources */,
 				CE095F3C1FEB175400137082 /* ViewCntrlBase.swift in Sources */,

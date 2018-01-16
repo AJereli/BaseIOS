@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+extension Set {
+    func at(_ i:Int) -> Element {
+        let index = self.index(self.startIndex, offsetBy: i)
+        return self[index]
+    }
+}
 
 extension UIViewController {
     func showAlertMessage(title: String, message: String) {
@@ -21,6 +27,14 @@ extension UIViewController {
     
 }
 
+extension UITableViewCell {
+    static var defaultReuseIdentifier: String {
+        guard let substring: Substring = String(describing: self).split(separator: "<").first else {
+            return String(describing: self)
+        }
+        return String(substring)
+    }
+}
 
 extension UIView{
     

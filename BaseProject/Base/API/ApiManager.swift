@@ -11,7 +11,14 @@ import Alamofire
 
 class ApiManager {
 
+    private let _resourcesPrefix: String = ""
+    private var _accessToken = ""
+    private var _refreshToken = ""
+    private var _tokenExpires = Date()
+    
     static var headers:HTTPHeaders = [:]
+    
+
     
     func call (url: URL, method:HTTPMethod, parameters: Parameters?,
                encoding:ParameterEncoding = URLEncoding.default, headers:HTTPHeaders = ApiManager.headers){

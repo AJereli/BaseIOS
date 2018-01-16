@@ -22,11 +22,11 @@ class ViewController: ViewCntrlBase {
     override func viewDidLoad() {
         super.viewDidLoad()
         testView = TestView()
-        testView?.text = "asd"
+        testView?.text = "aфывфывфывфывфывпуаsd"
         contentContainer.addSubview(testView!)
     
         
-        showLoadOverlay()
+      //  showLoadOverlay()
         
         
     }

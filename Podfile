@@ -5,7 +5,7 @@ target "BaseProject" do
   pod 'Alamofire'
   pod 'ObjectMapper',  :git => ‘https://github.com/Hearst-DD/ObjectMapper.git’, :branch => ‘swift-4’
   
-
+  pod 'BlueCapKit'
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
